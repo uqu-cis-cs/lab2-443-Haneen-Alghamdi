@@ -21,6 +21,7 @@ public class Garage{
      * private classType [] varName = new classType[size];
      *
      */
+    private cars Car [] 
 
     /************ Part 2 **************/
     /**
