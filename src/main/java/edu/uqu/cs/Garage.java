@@ -21,7 +21,7 @@ public class Garage{
      * private classType [] varName = new classType[size];
      *
      */
-    private cars Car [] 
+    private Car [] cars = new Car [3];
 
     /************ Part 2 **************/
     /**
@@ -32,6 +32,7 @@ public class Garage{
      * public dataType varName= value;
      *
      */
+    public static int countCars = 0;
 
     /************ Part 3 **************/
     /**
@@ -46,6 +47,11 @@ public class Garage{
      *     }
      *}
      */
+    public Garage (){
+        for(int i=0; i<cars.length; i++){
+            cars[i]= new Car();
+        }
+    }
 
     /************ Part 4 **************/
     /**
@@ -60,6 +66,11 @@ public class Garage{
      * Syntax:
      * public void methodName(String m)
      */
+    public void addCar(String m){
+
+        Car.moveCarIn(f);
+        countCars++;
+    }
 
 
     /************ Part 5 **************/
@@ -72,6 +83,9 @@ public class Garage{
      * public void methodName(String m)
      *
      */
+    public void moveOut(String m){
+        Car.moveCarOut(f);
+    }
 
 
 
@@ -85,6 +99,9 @@ public class Garage{
      * public void methodName(String m)
      *
      */
+    public void moveIn(String m){
+        Car.moveCarIn(f);
+    }
 
 
     /************ Part 7 **************/
@@ -96,6 +113,9 @@ public class Garage{
      * public void methodName(String m)
      *
      */
+    public void listCars(String m){
+        
+    }
 
 
 

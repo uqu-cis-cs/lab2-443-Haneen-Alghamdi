@@ -81,10 +81,10 @@ public class Car{
      *
      */
     public moveCarOut(){
-
+        inOutGarage = false;
     }
     public moveCarIn(){
-        
+        inOutGarage = true;
     }
 
 
