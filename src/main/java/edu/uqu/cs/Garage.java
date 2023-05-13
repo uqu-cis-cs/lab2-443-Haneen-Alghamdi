@@ -67,8 +67,8 @@ public class Garage{
      * public void methodName(String m)
      */
     public void addCar(String m){
-
-        Car.moveCarIn(f);
+        Car.setmodel();
+        model.moveCarIn();
         countCars++;
     }
 
@@ -114,7 +114,7 @@ public class Garage{
      *
      */
     public void listCars(String m){
-        
+        System.out.println();
     }
 
 
