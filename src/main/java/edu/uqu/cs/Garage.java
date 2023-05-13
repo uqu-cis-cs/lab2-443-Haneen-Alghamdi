@@ -67,6 +67,7 @@ public class Garage{
      * public void methodName(String m)
      */
     public void addCar(String m){
+        m= model;
         Car.setmodel();
         model.moveCarIn();
         countCars++;
