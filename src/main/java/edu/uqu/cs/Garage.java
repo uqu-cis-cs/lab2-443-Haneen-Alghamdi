@@ -67,10 +67,11 @@ public class Garage{
      * public void methodName(String m)
      */
     public void addCar(String m){
-        m= model;
-        Car.setmodel();
-        model.moveCarIn();
+       if(m != listCars()){
+        Car.setmodel(m);
+        moveCarIn();
         countCars++;
+    }
     }
 
 
@@ -85,7 +86,7 @@ public class Garage{
      *
      */
     public void moveOut(String m){
-        Car.moveCarOut(f);
+        Car.moveCarOut();
     }
 
 
@@ -101,7 +102,7 @@ public class Garage{
      *
      */
     public void moveIn(String m){
-        Car.moveCarIn(f);
+        Car.moveCarIn();
     }
 
 
@@ -115,7 +116,7 @@ public class Garage{
      *
      */
     public void listCars(String m){
-        System.out.println();
+        System.out.println(moveIn());
     }
 
 
