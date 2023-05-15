@@ -9,6 +9,8 @@ package edu.uqu.cs;
 */
 import java.util.Scanner;
 
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
 public class Garage{
 
     /************ Part 1 **************/
@@ -67,11 +69,16 @@ public class Garage{
      * public void methodName(String m)
      */
     public void addCar(String m){
-       if(m != listCars()){
-        Car.setmodel(m);
-        moveCarIn();
+       for(int i=0; i<countCars; i++){
+        if(m != listCars()){
+            Car st = new Car();
+        st.setmodel(m);
+        st.moveCarIn();
         countCars++;
-    }
+        }else {
+            System.out.println("this car is exist");
+        }
+    } 
     }
 
 
@@ -86,9 +93,10 @@ public class Garage{
      *
      */
     public void moveOut(String m){
+        for(int i=0; i<countCars; i++){
         Car.moveCarOut();
     }
-
+    }
 
 
     /************ Part 6 **************/
@@ -102,9 +110,10 @@ public class Garage{
      *
      */
     public void moveIn(String m){
+       for(int i=0; i<countCars; i++){
         Car.moveCarIn();
     }
-
+    }
 
     /************ Part 7 **************/
     /**
@@ -116,7 +125,10 @@ public class Garage{
      *
      */
     public void listCars(String m){
-        System.out.println(moveIn());
+        System.out.println("the list is ");
+        for(int i=0; i<countCars; i++){
+
+        }
     }
 
 

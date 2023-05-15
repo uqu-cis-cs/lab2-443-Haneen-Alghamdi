@@ -19,29 +19,29 @@ public class Home{
 
 	        // Add "Toyota Corolla Cross" in the garage. Hint: use method addCar () of class Garage
                 //HERE
-                Garage.addCar("Toyota Corolla Cross");
+                st.addCar("Toyota Corolla Cross");
 
                 //List all the cars in the garage. Hint: use method listCars () of class Garage
                 //HERE
-                Garage.listCars();
+                st.listCars();
 
                 // Place "Ford Fusion" in the garage. Hint: use method addCar () of class Garage
                 //HERE
-                Garage.addCar("Ford Fusion");
+                st.addCar("Ford Fusion");
 
  	        // List all the cars in the garage once again. Hint: use method listCars () of class Garage
                 //HERE
-                Garage.listCars();
+                st.listCars();
 
 
                // Move out "Ford Fusion" from the garage. Hint: use method moveOut () of class Garage
                //HERE
-               Garage.moveOut();
+               st.moveOut();
 
 
                // List all the cars in the garage. Hint: use method listCars () of class Garage
                //HERE
-               Garage.listCars();
+               st.listCars();
 
         }
 

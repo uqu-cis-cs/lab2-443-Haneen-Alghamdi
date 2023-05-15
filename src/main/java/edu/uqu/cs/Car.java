@@ -80,10 +80,10 @@ public class Car{
      * moveCarIn() to set the inOutGarage flag to true;
      *
      */
-    public moveCarOut(){
+    public void moveCarOut(){
         inOutGarage = false;
     }
-    public moveCarIn(){
+    public void moveCarIn(){
         inOutGarage = true;
     }
 
