@@ -9,6 +9,8 @@ package edu.uqu.cs;
 */
 import java.util.Scanner;
 
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
 public class Garage{
 
     /************ Part 1 **************/
@@ -21,6 +23,7 @@ public class Garage{
      * private classType [] varName = new classType[size];
      *
      */
+    private Car [] cars = new Car [3];
 
     /************ Part 2 **************/
     /**
@@ -31,6 +34,7 @@ public class Garage{
      * public dataType varName= value;
      *
      */
+    public static int countCars = 0;
 
     /************ Part 3 **************/
     /**
@@ -45,6 +49,11 @@ public class Garage{
      *     }
      *}
      */
+    public Garage (){
+        for(int i=0; i<cars.length; i++){
+            cars[i]= new Car();
+        }
+    }
 
     /************ Part 4 **************/
     /**
@@ -59,6 +68,18 @@ public class Garage{
      * Syntax:
      * public void methodName(String m)
      */
+    public void addCar(String m){
+       for(int i=0; i<countCars; i++){
+        if(m != listCars()){
+            Car st = new Car();
+        st.setmodel(m);
+        st.moveCarIn();
+        countCars++;
+        }else {
+            System.out.println("this car is exist");
+        }
+    } 
+    }
 
 
     /************ Part 5 **************/
@@ -71,7 +92,11 @@ public class Garage{
      * public void methodName(String m)
      *
      */
-
+    public void moveOut(String m){
+        for(int i=0; i<countCars; i++){
+        Car.moveCarOut();
+    }
+    }
 
 
     /************ Part 6 **************/
@@ -84,7 +109,11 @@ public class Garage{
      * public void methodName(String m)
      *
      */
-
+    public void moveIn(String m){
+       for(int i=0; i<countCars; i++){
+        Car.moveCarIn();
+    }
+    }
 
     /************ Part 7 **************/
     /**
@@ -95,6 +124,12 @@ public class Garage{
      * public void methodName(String m)
      *
      */
+    public void listCars(String m){
+        System.out.println("the list is ");
+        for(int i=0; i<countCars; i++){
+
+        }
+    }
 
 
 
